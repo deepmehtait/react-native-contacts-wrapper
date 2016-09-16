@@ -25,8 +25,8 @@ rnpm link react-native-contacts-wrapper
 in `settings.gradle`
 
 ```
-include ':react-native-custom-module'
-project(':react-native-custom-module').projectDir = new File(settingsDir, '../node_modules/react-native-custom-module/android/')
+include ':react-native-contacts-wrapper'
+project(':react-native-contacts-wrapper').projectDir = new File(settingsDir, '../node_modules/react-native-contacts-wrapper/android/app')
 ```
 
 in `build.gradle`
@@ -86,4 +86,3 @@ ContactsWrapper.getEmail()
         console.log("ERROR MESSAGE: ", error.message);
       });
 ```
-
