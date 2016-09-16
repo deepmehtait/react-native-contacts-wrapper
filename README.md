@@ -86,3 +86,17 @@ ContactsWrapper.getEmail()
         console.log("ERROR MESSAGE: ", error.message);
       });
 ```
+
+```
+import ContactsWrapper from 'react-native-contacts-wrapper';
+...
+ContactsWrapper.getContact()
+    .then((contactObj) => {
+        console.log("contact: ", contactObj);
+        console.log("email: ", contactObj.email);
+    })
+    .catch((error) => {
+        console.log("ERROR CODE: ", error.code);
+        console.log("ERROR MESSAGE: ", error.message);
+    });
+```
